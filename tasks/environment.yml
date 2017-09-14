@@ -1,4 +1,8 @@
 ---
+- name: show conda info
+  command:
+    '"{{ miniconda_prefix }}/bin/conda" info'
+  changed_when: false
 
 - name: conda environment {{ miniconda_env.name }} is created
   command:
