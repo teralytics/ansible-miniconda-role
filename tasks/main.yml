@@ -1,6 +1,6 @@
 ---
 
-- name: miniconda installer is downloaded
+- name: "miniconda installer is downloaded, named {{ miniconda_installer }}"
   get_url:
     url="https://repo.continuum.io/miniconda/{{ miniconda_installer }}"
     dest="/tmp/{{ miniconda_installer }}"
